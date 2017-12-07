@@ -112,9 +112,9 @@ def record():
 def retrieve(key):
 	try:
 		if db.exists(key):
-			return json.dumps({"input": key, "output": db.get(key)})
+			return json.dumps({"input":key, "output": db.get(key)})
 		else:
-			return json.dumps({"input": key, "output": False, "error": "Unable to update value: key does not exist."})
+			return json.dumps({"input":key, "output": False, "error": "Unable to update value: key does not exist."})
 			
 	except Exception as err:
 		return json.dumps({"output": False, "error": err})
