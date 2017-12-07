@@ -1,0 +1,4 @@
+Flask==0.11.1
+requests==2.18.4
+slackclient==1.0.9
+redis==2.10.6
