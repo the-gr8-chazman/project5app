@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    image: t541817/project5app:latest
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
